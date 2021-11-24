@@ -12,7 +12,7 @@
 <body>
     <header>
         <nav>
-            <a href="#">My ToDo's</a>
+            <a href="#">Lista de Tarefas</a>
         </nav>
 
         <div class="user-info">
@@ -25,9 +25,9 @@
     <form class="nova-tarefa">
         <div class="not-done "></div>
 
-        <input type="text" placeholder="Nova tarefa">
+        <input id="nova-tarefa" type="text" placeholder="Nova tarefa">
 
-        <button>
+        <button id="adicionar-tarefa">
             <img src="./assets/plus.png" alt="Adicionar Tarefa">
         </button>
     </form>
@@ -44,7 +44,7 @@
     </ul>
 
     <h2 class="titulo-concluida">Tarefas concluídas</h2>
-    <ul class="titulo-concluida">
+    <ul class="tarefas-concluidas">
         <li class="tarefa">
             <div class="not-done"></div>
             <div class="descripcion">
@@ -54,7 +54,7 @@
         </li>
     </ul>
 
-    <!--  -->
+    <script src="js/lista-tarefas.js"></script>
 
 </body>
 
