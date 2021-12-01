@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./styles/lista-tarefas.css">
+    <title>ToDo</title>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <a href="#">My ToDo's</a>
+        </nav>
+    </header>
+
+
+    <form class="nova-tarefa">
+        <div class="not-done "></div>
+
+        <!-- Adicionando id ao campo do input -->
+        <input id="nova-tarefa" type="text" placeholder="Nova tarefa">
+
+        <!-- Adicionando id ao botão -->
+        <button id="adicionar-tarefa">
+            <img src="./assets/plus.png" alt="Adicionar Tarefa">
+        </button>
+    </form>
+
+    <!-- UL: Lista de elementos não ordenada-->
+    <ul class="tarefas-pendentes">
+    <!--     <LI> é um item que pertence a uma lista de elementos -->
+        <!-- <li class="tarefa">
+            <div class="not-done"></div>
+            <div class="descripcion">
+                <p class="nome">Minha bela tarefa</p>
+                <p class="timestamp">Criada: 19/04/20</p>
+            </div>
+        </li> -->
+    </ul>
+
+    <h2 class="titulo-concluida">Tarefas concluídas</h2>
+    <ul class="tarefas-concluidas">
+        <!-- <li class="tarefa">
+            <div class="not-done"></div>
+            <div class="descripcion">
+                <p class="nome">Minha bela tarefa</p>
+                <p class="timestamp">Criada: 19/04/20</p>
+            </div>
+        </li> -->
+    </ul>
+
+    <script src="js/lista-tarefas.js"></script>
+
+</body>
+
+</html>
