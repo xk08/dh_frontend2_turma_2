@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./styles/lista-tarefas.css">
+    <title>ToDo</title>
+
+    <!-- Importando via CDN -->
+    <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+
+    <script src="https://unpkg.com/dayjs@1.8.21/dayjs.min.js"></script>
+
+    <!-- Importando de maneira local no projeto -->
+
+    <script src="external/dayjs/dayjs.min.js"></script>
+
+    <!--     <script src="external/anime-master/anime-master/lib/anime.es.js"></script>
+ -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.1/anime.min.js"></script>
+
+
+
+
+
+</head>
+
+<body>
+    <header>
+        <nav aria-label="ToDo List">
+            <ul>
+                <li>
+                    <a href="#">Lista de tarefas</a>
+                </li>
+            </ul>
+        </nav>
+        <nav aria-label="Busca Api">
+            <ul>
+                <li>
+                    <a href="api.html">Busca na API</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+
+    <form class="nova-tarefa">
+
+        <input id="nova-tarefa" type="text" placeholder="Nova tarefa">
+
+        <label for="prazo" id="titulo-prazo">Prazo da tarefa:</label>
+        <input id="prazo" type="date">
+
+        <button id="adicionar-tarefa">
+            <img src="./assets/plus.png" alt="Adicionar Tarefa">
+        </button>
+
+        <button id="adicionar-tarefa-sweet-alert">
+            <img src="./assets/swal2.png" alt="Adicionar Tarefa Sweet Alert">
+        </button>
+    </form>
+
+
+
+    <!-- UL: Lista de elementos não ordenada-->
+    <h2 class="titulo-tarefas color-hex">Tarefas pendentes</h2> <!-- Ver como mudar o estilo -->
+    <ul class="tarefas-pendentes">
+        <!--     <LI> é um item que pertence a uma lista de elementos -->
+        <li class="tarefa">
+            <div class="not-done"></div>
+            <div class="descripcion">
+                <p class="nome">Minha bela tarefa</p>
+                <p class="timestamp round-log">Criada: 19/04/20</p>
+            </div>
+        </li>
+    </ul>
+
+    <h2 class="titulo-tarefas color-hex">Tarefas concluídas</h2>
+    <ul class="tarefas-concluidas el relative-values">
+        <!-- <li class="tarefa">
+            <div class="not-done"></div>
+            <div class="descripcion">
+                <p class="nome">Minha bela tarefa</p>
+                <p class="timestamp">Criada: 19/04/20</p>
+            </div>
+        </li> -->
+    </ul>
+
+    <ul class="titulo-tarefas color-hex">
+        <li>
+            <div id="wrapper">
+                <div id="text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Totam saepe expedita aspernatur
+                    omnis quia. Sequi ratione ullam temporibus perspiciatis cum non at ex provident, quod consequuntur
+                    dolorum sapiente sint nam?</div>
+            </div>
+            <div id="button">Clique para ver mais</div>
+
+        </li>
+    </ul>
+
+    <script src="js/lista-tarefas.js"></script>
+
+</body>
+
+</html>

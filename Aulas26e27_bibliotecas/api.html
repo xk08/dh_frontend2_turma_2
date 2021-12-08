@@ -9,31 +9,45 @@
     <title>ToDo</title>
 </head>
 
-<body>
+<body onload="buscaTodosApiNova()">
+
     <header>
-        <nav>
+        <nav aria-label="ToDo List">
             <ul>
                 <li>
-                    <a href="#">Lista de tarefas</a>
+                    <a href="index.html">Lista de tarefas</a>
+                </li>
+            </ul>
+        </nav>
+        <nav aria-label="Busca Api">
+            <ul>
+                <li>
+                    <a href="api.html">Busca na API</a>
                 </li>
             </ul>
         </nav>
     </header>
 
-
     <form class="nova-tarefa">
-        <div class="not-done "></div>
-
-        <!-- Adicionando id ao campo do input -->
-        <input id="nova-tarefa" type="text" placeholder="Nova tarefa">
-
-        <!-- Adicionando id ao botão -->
-        <button id="adicionar-tarefa">
-            <img src="./assets/plus.png" alt="Adicionar Tarefa">
+        <button id="button">
+            <img src="./assets/search.png" alt="Busca na API">
         </button>
+            Buscar tarefas na API
     </form>
 
+    <h2 class="titulo-tarefas">Tarefas concluídas</h2>
+    <ul class="tarefas-concluidas">
+        <!-- <li class="tarefa">
+            <div class="not-done"></div>
+            <div class="descripcion">
+                <p class="nome">Minha bela tarefa</p>
+                <p class="timestamp">Criada: 19/04/20</p>
+            </div>
+        </li>  -->
+    </ul>
+
     <!-- UL: Lista de elementos não ordenada-->
+    <h2 class="titulo-tarefas">Tarefas pendentes</h2> <!-- Ver esse titulo, se altero o estilo -->
     <ul class="tarefas-pendentes">
         <!--     <LI> é um item que pertence a uma lista de elementos -->
         <!-- <li class="tarefa">
@@ -44,19 +58,8 @@
             </div>
         </li> -->
     </ul>
-
-    <h2 class="titulo-concluida">Tarefas concluídas</h2>
-    <ul class="tarefas-concluidas">
-        <!-- <li class="tarefa">
-            <div class="not-done"></div>
-            <div class="descripcion">
-                <p class="nome">Minha bela tarefa</p>
-                <p class="timestamp">Criada: 19/04/20</p>
-            </div>
-        </li> -->
-    </ul>
-
-    <script src="js/lista-tarefas.js"></script>
+    
+    <script src="js/busca-api.js"></script>
 
 </body>
 
